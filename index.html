@@ -1,0 +1,125 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Prototype 1</title>
+    <link rel="stylesheet" href="style/style.css" />
+  </head>
+  <body>
+    <!-- Nav Bar -->
+    <div id="navbar" onclick="dropdownMain()">
+      <div id="plus">
+        <img src="pic/plus.png" alt="" />
+      </div>
+    </div>
+    <div class="dropdown-menu" id="dropdown-content">
+      <div class="dropdown-inside">
+        <a href="index.html">Home</a>
+        <div id="categoryTab" onclick="dropdownMisc()">
+          Category
+          <div class="dropdown-links" id="drop-links">
+            <a href="pages/one.html">One</a>
+            <a href="pages/two.html">Two</a>
+            <a href="pages/three.html">Three</a>
+            <a href="pages/four.html">Four</a>
+            <a href="pages/five.html">Five</a>
+            <a href="pages/six.html">Six</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Main Header -->
+    <div id="banner">
+      <h1>Test</h1>
+    </div>
+
+    <!-- Category Cards -->
+    <div id="categories">
+      <!-- Container One -->
+      <div
+        class="categoryCard"
+        id="one"
+        onclick="location.href='pages/one.html';"
+      >
+        <div class="cardTitle">One</div>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo, neque
+          fugiat. A, veniam delectus! Debitis fugit quasi repellat harum, itaque
+          ratione autem quaerat sit commodi, illum aspernatur eaque ab in?
+        </p>
+      </div>
+
+      <!-- Container Two -->
+      <div
+        class="categoryCard"
+        id="two"
+        onclick="location.href='pages/two.html';"
+      >
+        <div class="cardTitle">Two</div>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo, neque
+          fugiat. A, veniam delectus! Debitis fugit quasi repellat harum, itaque
+          ratione autem quaerat sit commodi, illum aspernatur eaque ab in?
+        </p>
+      </div>
+
+      <!-- Container Three -->
+      <div
+        class="categoryCard"
+        id="three"
+        onclick="location.href='pages/three.html';"
+      >
+        <div class="cardTitle">Three</div>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo, neque
+          fugiat. A, veniam delectus! Debitis fugit quasi repellat harum, itaque
+          ratione autem quaerat sit commodi, illum aspernatur eaque ab in?
+        </p>
+      </div>
+
+      <!-- Container Four -->
+      <div
+        class="categoryCard"
+        id="four"
+        onclick="location.href='pages/four.html';"
+      >
+        <div class="cardTitle">Four</div>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo, neque
+          fugiat. A, veniam delectus! Debitis fugit quasi repellat harum, itaque
+          ratione autem quaerat sit commodi, illum aspernatur eaque ab in?
+        </p>
+      </div>
+
+      <!-- Container Five -->
+      <div
+        class="categoryCard"
+        id="five"
+        onclick="location.href='pages/five.html';"
+      >
+        <div class="cardTitle">Five</div>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo, neque
+          fugiat. A, veniam delectus! Debitis fugit quasi repellat harum, itaque
+          ratione autem quaerat sit commodi, illum aspernatur eaque ab in?
+        </p>
+      </div>
+
+      <!-- Container Six -->
+      <div
+        class="categoryCard"
+        id="six"
+        onclick="location.href='pages/six.html';"
+      >
+        <div class="cardTitle">Six</div>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo, neque
+          fugiat. A, veniam delectus! Debitis fugit quasi repellat harum, itaque
+          ratione autem quaerat sit commodi, illum aspernatur eaque ab in?
+        </p>
+      </div>
+    </div>
+    <script src="script/dropdown.js"></script>
+  </body>
+</html>

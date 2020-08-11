@@ -1,0 +1,123 @@
+@import "animation.css";
+
+body {
+  background-color: #cddcff;
+}
+
+#navbar {
+  background-color: #223d7c;
+  height: 50px;
+  cursor: pointer;
+  align-items: center;
+}
+
+#navbar:hover {
+  background-color: #1e3261;
+}
+
+#plus {
+  padding-top: 5px;
+  padding-left: 49%;
+}
+
+#plus img {
+  width: 50px;
+}
+
+#banner {
+  overflow: hidden;
+  background-size: cover;
+  background-position: center;
+  background-image: url("../pic/bannercut.png");
+}
+
+#banner h1 {
+  text-align: center;
+  font-size: 75px;
+  padding: 15px;
+  color: #5e2a9e;
+}
+
+#categories {
+  display: grid;
+  gap: 40px;
+  margin-left: 20px;
+  margin-right: 20px;
+  margin-top: 20px;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, auto);
+}
+
+#categoryTab {
+  cursor: pointer;
+}
+
+.categoryCard {
+  display: flex;
+  flex-direction: column;
+  background-color: #dde6ff;
+  cursor: pointer;
+}
+
+.categoryCard p {
+  opacity: 0;
+}
+
+.categoryCard:hover {
+  box-shadow: 5px 5px 10px aqua;
+}
+
+.categoryCard:hover div {
+  animation: cardsTitle;
+  animation-duration: 0.3s;
+  animation-fill-mode: forwards;
+}
+
+.categoryCard:hover p {
+  animation: cardsContent;
+  animation-duration: 1s;
+  animation-fill-mode: forwards;
+}
+
+.cardTitle {
+  text-align: center;
+  position: relative;
+  top: 50%;
+  background-color: #f5e6e8;
+}
+
+.dropdown-menu {
+  display: none;
+}
+
+.dropdown-inside {
+  display: flex;
+  justify-content: space-around;
+}
+
+.dropdown-inside a {
+  color: black;
+  text-decoration: none;
+}
+
+.dropdown-links {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+.dropdown-links a {
+  float: none;
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.dropdown-links a:hover {
+  background-color: #ffeaea;
+}
