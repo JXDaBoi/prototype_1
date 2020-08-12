@@ -144,4 +144,8 @@
   .dropdown-links a:hover {
     background-color: #ffeaea;
   }
+
+  .disappearDisplay {
+    display: none;
+  }
 }
