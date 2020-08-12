@@ -1,0 +1,67 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Suggestion</title>
+    <link rel="stylesheet" href="../style/md.css" />
+    <link rel="stylesheet" href="../style/sm.css" />
+  </head>
+  <body>
+    <!-- Nav Bar -->
+    <div id="navbar" onclick="dropdownMain()">
+      <div id="plus">
+        <img src="../pic/plus.png" alt="" />
+      </div>
+    </div>
+    <div class="dropdown-menu" id="dropdown-content">
+      <div class="dropdown-inside">
+        <a href="../index.html">Home</a>
+        <div id="categoryTab" onclick="dropdownMisc()">
+          Category
+          <div class="dropdown-links" id="drop-links">
+            <a href="one.html">One</a>
+            <a href="two.html">Two</a>
+            <a href="three.html">Three</a>
+            <a href="four.html">Four</a>
+            <a href="five.html">Five</a>
+            <a href="six.html">Six</a>
+          </div>
+        </div>
+        <a href="suggestion.html">Suggestion</a>
+      </div>
+    </div>
+
+    <!-- Main Header -->
+    <div id="banner">
+      <h1>Suggestion</h1>
+      <h3>This is where you drop down your precious suggestion</h3>
+      <h3>To make our channel better</h3>
+    </div>
+    <div id="suggestForm">
+      <form action="">
+        <label for="name">Your Name (or nickname)</label><br />
+        <input type="text" name="name" /><br /><br />
+        <label for="gender">What is your gender?</label><br />
+        <select name="gender" required>
+          <option value="male">Male</option>
+          <option value="female">Female</option>
+          <option value="nope">Rather not to tell</option>
+        </select>
+        <br /><br />
+        <label for="about">Suggestion about?</label><br />
+        <select name="about" required>
+          <option value="record">Recording</option>
+          <option value="genre">Genre of recording</option>
+          <option value="newvid">New video suggestion</option>
+        </select>
+        <br /><br />
+        <label for="context">Suggestion Context</label><br />
+        <textarea name="context" id="" cols="30" rows="5"></textarea>
+        <br /><br />
+        <input type="submit" value="Submit" /><br />
+      </form>
+    </div>
+    <script src="../script/dropdown.js"></script>
+    <script src="../script/suggestion.js"></script>
+  </body>
+</html>

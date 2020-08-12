@@ -3,7 +3,8 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Prototype 1</title>
-    <link rel="stylesheet" href="style/style.css" />
+    <link rel="stylesheet" href="style/md.css" />
+    <link rel="stylesheet" href="style/sm.css" />
   </head>
   <body>
     <!-- Nav Bar -->
@@ -26,6 +27,7 @@
             <a href="pages/six.html">Six</a>
           </div>
         </div>
+        <a href="pages/suggestion.html">Suggestion</a>
       </div>
     </div>
 
@@ -37,88 +39,112 @@
     <!-- Category Cards -->
     <div id="categories">
       <!-- Container One -->
-      <div
-        class="categoryCard"
-        id="one"
-        onclick="location.href='pages/one.html';"
-      >
-        <div class="cardTitle">One</div>
-        <p>
+      <div class="categoryCard" onclick="cardAni(1)">
+        <div class="cardTitle topMid" id="one">One</div>
+        <p class="disappearOpacity" id="oneCon">
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo, neque
           fugiat. A, veniam delectus! Debitis fugit quasi repellat harum, itaque
           ratione autem quaerat sit commodi, illum aspernatur eaque ab in?
         </p>
+        <button
+          class="disappearDisplay"
+          id="oneButton"
+          onclick="location.href='pages/one.html'"
+        >
+          Navigate to One
+        </button>
       </div>
 
       <!-- Container Two -->
-      <div
-        class="categoryCard"
-        id="two"
-        onclick="location.href='pages/two.html';"
-      >
-        <div class="cardTitle">Two</div>
-        <p>
+      <div class="categoryCard" onclick="cardAni(2)">
+        <div class="cardTitle topMid" id="two">Two</div>
+        <p class="disappearOpacity" id="twoCon">
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo, neque
           fugiat. A, veniam delectus! Debitis fugit quasi repellat harum, itaque
           ratione autem quaerat sit commodi, illum aspernatur eaque ab in?
         </p>
+        <button
+          class="disappearDisplay"
+          id="twoButton"
+          onclick="location.href='pages/two.html'"
+        >
+          Navigate to Two
+        </button>
       </div>
 
       <!-- Container Three -->
-      <div
-        class="categoryCard"
-        id="three"
-        onclick="location.href='pages/three.html';"
-      >
-        <div class="cardTitle">Three</div>
-        <p>
+      <div class="categoryCard" onclick="cardAni(3)">
+        <div class="cardTitle topMid" id="three">Three</div>
+        <p class="disappearOpacity" id="threeCon">
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo, neque
           fugiat. A, veniam delectus! Debitis fugit quasi repellat harum, itaque
           ratione autem quaerat sit commodi, illum aspernatur eaque ab in?
         </p>
+        <button
+          class="disappearDisplay"
+          id="threeButton"
+          onclick="location.href='pages/three.html'"
+        >
+          Navigate to Three
+        </button>
       </div>
 
       <!-- Container Four -->
-      <div
-        class="categoryCard"
-        id="four"
-        onclick="location.href='pages/four.html';"
-      >
-        <div class="cardTitle">Four</div>
-        <p>
+      <div class="categoryCard" onclick="cardAni(4)">
+        <div class="cardTitle topMid" id="four">Four</div>
+        <p class="disappearOpacity" id="fourCon">
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo, neque
           fugiat. A, veniam delectus! Debitis fugit quasi repellat harum, itaque
           ratione autem quaerat sit commodi, illum aspernatur eaque ab in?
         </p>
+        <button
+          class="disappearDisplay"
+          id="fourButton"
+          onclick="location.href='pages/four.html'"
+        >
+          Navigate to Four
+        </button>
       </div>
 
       <!-- Container Five -->
-      <div
-        class="categoryCard"
-        id="five"
-        onclick="location.href='pages/five.html';"
-      >
-        <div class="cardTitle">Five</div>
-        <p>
+      <div class="categoryCard" onclick="cardAni(5)">
+        <div class="cardTitle topMid" id="five">Five</div>
+        <p class="disappearOpacity" id="fiveCon">
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo, neque
           fugiat. A, veniam delectus! Debitis fugit quasi repellat harum, itaque
           ratione autem quaerat sit commodi, illum aspernatur eaque ab in?
         </p>
+        <button
+          class="disappearDisplay"
+          id="fiveButton"
+          onclick="location.href='pages/five.html'"
+        >
+          Navigate to Five
+        </button>
       </div>
 
       <!-- Container Six -->
-      <div
-        class="categoryCard"
-        id="six"
-        onclick="location.href='pages/six.html';"
-      >
-        <div class="cardTitle">Six</div>
-        <p>
+      <div class="categoryCard" onclick="cardAni(6)">
+        <div class="cardTitle topMid" id="six">Six</div>
+        <p class="disappearOpacity" id="sixCon">
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo, neque
           fugiat. A, veniam delectus! Debitis fugit quasi repellat harum, itaque
           ratione autem quaerat sit commodi, illum aspernatur eaque ab in?
         </p>
+        <button
+          class="disappearDisplay"
+          id="sixButton"
+          onclick="location.href='pages/six.html'"
+        >
+          Navigate to Six
+        </button>
       </div>
+    </div>
+
+    <!-- Suggestion -->
+    <div id="suggestionNav" onclick="location.href='pages/suggestion.html'">
+      <h4>Any Suggestion?</h4>
+      <h4>Click this to drop down your precious suggestion.</h4>
     </div>
     <script src="script/dropdown.js"></script>
   </body>
