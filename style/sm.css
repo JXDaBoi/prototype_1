@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Arima+Madurai:wght@700&display=swap");
+
 @media only screen and (max-width: 767px) {
   body {
     background-color: #cddcff;
@@ -34,9 +36,20 @@
 
   #banner h1 {
     text-align: center;
-    font-size: 35px;
-    padding: 5px;
-    color: #5e2a9e;
+    font-size: 50px;
+    font-family: "Arima Madurai", cursive;
+    text-shadow: 5px 15px 8px blueviolet;
+    color: #6d0aa7;
+  }
+
+  #banner h2 {
+    text-align: center;
+    font-size: 40px;
+    font-family: "Arima Madurai", cursive;
+    text-shadow: 5px 15px 8px blueviolet;
+    color: #6d0aa7;
+    position: relative;
+    top: -40px;
   }
 
   #banner h3 {
