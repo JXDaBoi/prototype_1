@@ -121,6 +121,17 @@
     padding-top: 10px;
   }
 
+  #searchbar input {
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 20px;
+    width: 60%;
+    height: 50px;
+    text-align: center;
+    font-size: 30px;
+  }
+
   .categoryCard {
     display: flex;
     flex-direction: column;
@@ -191,6 +202,22 @@
 
   .dropdown-links a:hover {
     background-color: #ffeaea;
+  }
+
+  .content {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+    padding: 20px;
+    gap: 20px;
+  }
+
+  .content img {
+    padding: 10px;
+    width: 200px;
+  }
+
+  .content-card {
+    background-color: rgb(255, 223, 223);
   }
 
   .disappearDisplay {
