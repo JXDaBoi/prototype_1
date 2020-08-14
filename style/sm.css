@@ -118,6 +118,22 @@
     font-size: 14px;
   }
 
+  #searchbar {
+    position: sticky;
+    top: -20px;
+  }
+
+  #searchbar input {
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 20px;
+    width: 60%;
+    height: 50px;
+    text-align: center;
+    font-size: 30px;
+  }
+
   .categoryCard {
     display: flex;
     flex-direction: column;
@@ -170,6 +186,23 @@
 
   .dropdown-links a:hover {
     background-color: #ffeaea;
+  }
+
+  .content {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    gap: 20px;
+    align-items: center;
+  }
+
+  .content img {
+    padding: 10px;
+    width: 50%;
+  }
+
+  .content-card {
+    background-color: rgb(255, 223, 223);
   }
 
   .topMid {
