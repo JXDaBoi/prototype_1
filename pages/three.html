@@ -43,6 +43,27 @@
       </form>
     </div>
 
+    <!-- Randomizer -->
+    <div id="randomizer">
+      <input
+        type="range"
+        id="amount"
+        min="1"
+        max="12"
+        value="1"
+        onchange="amount(this.value)"
+      />
+      <br />
+      <input
+        type="text"
+        id="value"
+        value="1"
+        onchange="changeAmount(this.value)"
+      />
+      <br />
+      <button onclick="randomizer()">Randomizer</button>
+    </div>
+
     <!-- Content -->
     <div class="content" id="main-content">
       <!-- Cards -->

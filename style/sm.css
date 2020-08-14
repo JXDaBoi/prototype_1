@@ -121,6 +121,7 @@
   #searchbar {
     position: sticky;
     top: -20px;
+    z-index: 1;
   }
 
   #searchbar input {
@@ -132,6 +133,30 @@
     height: 50px;
     text-align: center;
     font-size: 30px;
+  }
+
+  #value {
+    width: 50px;
+    font-size: 15px;
+    text-align: center;
+  }
+
+  #randomizer button {
+    width: 100px;
+    height: 30px;
+    font-size: 15px;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 15px;
+    margin-bottom: 5px;
+  }
+
+  #randomizer input {
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 10px;
   }
 
   .categoryCard {
@@ -172,7 +197,7 @@
     background-color: #f9f9f9;
     min-width: 160px;
     box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
-    z-index: 1;
+    z-index: 2;
   }
 
   .dropdown-links a {
@@ -203,6 +228,7 @@
 
   .content-card {
     background-color: rgb(255, 223, 223);
+    width: 90%;
   }
 
   .topMid {
